@@ -4,7 +4,6 @@ namespace AloTech;
 
 class Click2Call
 {
-
     /**
      * @var AloTech
      */
