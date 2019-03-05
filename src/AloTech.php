@@ -19,6 +19,11 @@ class AloTech
     protected $endpoint;
 
     /**
+     * @var services
+     */
+    protected $services;
+
+    /**
      * Constructor
      *
      * @param Config $authentication
@@ -37,6 +42,7 @@ class AloTech
     {
         $this->authentication = $authentication;
     }
+
     /**
      * Get authentication
      *
@@ -56,6 +62,7 @@ class AloTech
     {
         $this->endpoint = $endpoint;
     }
+
     /**
      * Get endpoint
      *
@@ -67,7 +74,7 @@ class AloTech
     }
 
     /**
-     * Login
+     * Login by email
      *
      * @param string $email
      *
@@ -91,7 +98,7 @@ class AloTech
     /**
      * Ping to api
      *
-     * @param string $email
+     * @return array
      */
     public function ping()
     {
@@ -171,5 +178,30 @@ class AloTech
         }
 
         return json_decode($response, true);
+    }
+
+    /**
+     * Populate service
+     *
+     * @param string $name Service name
+     *
+     * @return object
+     */
+    public function __get($name)
+    {
+        if (!in_array($name, ['click2Call'])) {
+            $trace = debug_backtrace();
+            throw new \Exception(sprintf('Undefined property via __get(): %s in %s on line %u', $name, $trace[0]['file'], $trace[0]['line']));
+        }
+
+        if (isset($this->services[$name])) {
+            return $this->services[$name];
+        }
+
+        $serviceName = sprintf('%s\\%s', __NAMESPACE__, ucfirst($name));
+
+        $this->services[$name] = new $serviceName($this);
+
+        return $this->services[$name];
     }
 }
