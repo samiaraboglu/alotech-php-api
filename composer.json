@@ -1,0 +1,24 @@
+{
+    "name": "samiaraboglu/alotech-php-api",
+    "type": "library",
+    "description": "",
+    "keywords": ["php", "alotech", "api", "alotech-php-api"],
+    "homepage": "https://github.com/samiaraboglu/alotech-php-api",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sami Araboğlu",
+            "email": "samiaraboglu@gmail.com",
+            "homepage": "https://github.com/samiaraboglu",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "AloTech\\": "src"
+        }
+    }
+}
