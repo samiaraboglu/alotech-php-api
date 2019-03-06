@@ -41,3 +41,24 @@ $click2->call([
 	'hangup_url' => '{YOUR_HANGUP_URL}'
 ]);
 ```
+
+#### Hang
+Hangs up the active call of the agent.
+```php
+$click2 = new AloTech\Click2($aloTech);
+$click2->hang();
+```
+
+#### Hold
+Holds the active call of the agent.
+```php
+$click2 = new AloTech\Click2($aloTech);
+$click2->hold();
+```
+
+#### Unhold
+Unholds the active call of the agent.
+```php
+$click2 = new AloTech\Click2($aloTech);
+$click2->unhold();
+```
