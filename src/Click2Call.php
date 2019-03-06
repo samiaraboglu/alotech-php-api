@@ -20,14 +20,12 @@ class Click2Call
     }
 
     /**
-     * Get mobile
+     * Call
      *
-     * @return string
+     * @return array $$parameter
      */
-    public function call($mobile)
+    public function call($parameter)
     {
-        return $this->aloTech->request('click2call', null, null, $this->aloTech->getAuthentication()->getSession(), [
-            'phonenumber' => $mobile
-        ]);
+        return $this->aloTech->request('click2call', null, null, $this->aloTech->getAuthentication()->getSession(), $parameter);
     }
 }
