@@ -22,7 +22,7 @@ class Click2Call
     /**
      * Call
      *
-     * @return array $$parameter
+     * @return array $parameter
      */
     public function call($parameter)
     {
