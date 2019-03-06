@@ -35,5 +35,8 @@ $aloTech->login('{EMAIL}');
 Used to trigger a call to given number.
 ```php
 $click2Call = new AloTech\Click2Call($aloTech);
-$click2Call->call('{PHONE_NUMBER}');
+$click2Call->call([
+	'phonenumber' => '{PHONE_NUMBER}',
+	'hangup_url' => '{YOUR_HANGUP_URL}'
+]);
 ```
