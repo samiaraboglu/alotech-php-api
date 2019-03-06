@@ -41,8 +41,8 @@ $click2 = new AloTech\Click2($aloTech);
 Used to trigger a call to given number.
 ```php
 $click2->call([
-	'phonenumber' => '{PHONE_NUMBER}',
-	'hangup_url' => '{YOUR_HANGUP_URL}'
+    'phonenumber' => '{PHONE_NUMBER}',
+    'hangup_url' => '{YOUR_HANGUP_URL}'
 ]);
 ```
 
