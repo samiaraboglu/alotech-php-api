@@ -31,11 +31,12 @@ Set user session key.
 $aloTech->login('{EMAIL}');
 ```
 
-### Click 2 Call
+### Click 2
+#### Call
 Used to trigger a call to given number.
 ```php
-$click2Call = new AloTech\Click2Call($aloTech);
-$click2Call->call([
+$click2 = new AloTech\Click2($aloTech);
+$click2->call([
 	'phonenumber' => '{PHONE_NUMBER}',
 	'hangup_url' => '{YOUR_HANGUP_URL}'
 ]);

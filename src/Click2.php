@@ -2,7 +2,7 @@
 
 namespace AloTech;
 
-class Click2Call
+class Click2
 {
     /**
      * @var AloTech
