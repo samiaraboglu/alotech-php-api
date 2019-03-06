@@ -32,10 +32,14 @@ $aloTech->login('{EMAIL}');
 ```
 
 ### Click 2
+Use click2 service.
+```php
+$click2 = new AloTech\Click2($aloTech);
+```
+
 #### Call
 Used to trigger a call to given number.
 ```php
-$click2 = new AloTech\Click2($aloTech);
 $click2->call([
 	'phonenumber' => '{PHONE_NUMBER}',
 	'hangup_url' => '{YOUR_HANGUP_URL}'
@@ -45,20 +49,17 @@ $click2->call([
 #### Hang
 Hangs up the active call of the agent.
 ```php
-$click2 = new AloTech\Click2($aloTech);
 $click2->hang();
 ```
 
 #### Hold
 Holds the active call of the agent.
 ```php
-$click2 = new AloTech\Click2($aloTech);
 $click2->hold();
 ```
 
 #### Unhold
 Unholds the active call of the agent.
 ```php
-$click2 = new AloTech\Click2($aloTech);
 $click2->unhold();
 ```
