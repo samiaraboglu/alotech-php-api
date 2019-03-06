@@ -20,12 +20,20 @@ class Click2
     }
 
     /**
-     * Call
+     * Click 2 Call
      *
-     * @return array $parameter
+     * @param array $parameter
      */
     public function call($parameter)
     {
         return $this->aloTech->request('click2call', null, null, $this->aloTech->getAuthentication()->getSession(), $parameter);
+    }
+
+    /**
+     * Click 2 Hang
+     */
+    public function hang()
+    {
+        return $this->aloTech->request('click2hang', null, null, $this->aloTech->getAuthentication()->getSession());
     }
 }
