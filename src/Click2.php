@@ -36,4 +36,12 @@ class Click2
     {
         return $this->aloTech->request('click2hang', null, null, $this->aloTech->getAuthentication()->getSession());
     }
+
+    /**
+     * Click 2 Hold
+     */
+    public function hold()
+    {
+        return $this->aloTech->request('click2hold', null, null, $this->aloTech->getAuthentication()->getSession());
+    }
 }
