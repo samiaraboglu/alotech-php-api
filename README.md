@@ -1,5 +1,9 @@
 # alotech-php-api
 
+[![Latest Stable Version](https://poser.pugx.org/samiaraboglu/alotech-php-api/v/stable)](https://packagist.org/packages/samiaraboglu/alotech-php-api)
+[![Total Downloads](https://poser.pugx.org/samiaraboglu/alotech-php-api/downloads)](https://packagist.org/packages/samiaraboglu/alotech-php-api)
+[![License](https://poser.pugx.org/samiaraboglu/alotech-php-api/license)](https://packagist.org/packages/samiaraboglu/alotech-php-api)
+
 - [AloTech Official Documentation](https://alotech.atlassian.net/wiki/spaces/PA1/overview)
 - [Bundle for Symfony](https://github.com/samiaraboglu/alotech-api-bundle)
 
