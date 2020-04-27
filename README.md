@@ -79,8 +79,8 @@ Returns agent performance information for the given period.
 
 ```php
 $report->agentPerf(
-    '{Y-m-d}',          // Optional - DateTime Object
-    '{Y-m-d}',          // Optional - DateTime Object
+    '{STARTDATE}',      // Optional DateTime Object
+    '{FINISHDATE}',     // Optional DateTime Object
     '{AGENT}',          // Optional
     '{EMAIL}',          // Optional
     '{AGENTCUSTOMID}',  // Optional
