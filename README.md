@@ -78,12 +78,12 @@ $report = new AloTech\Report($aloTech);
 Returns agent performance information for the given period.
 
 ```php
-$report->agentPerf(
-    '{STARTDATE}',      // Optional DateTime Object
-    '{FINISHDATE}',     // Optional DateTime Object
-    '{AGENT}',          // Optional
-    '{EMAIL}',          // Optional
-    '{AGENTCUSTOMID}',  // Optional
-    '{TEAM}'            // Optional
-);
+$report->agentPerf([
+    'startdate'     => '{Y-m-d}',           // Optional
+    'finishdate'    => '{Y-m-d}',           // Optional
+    'agent'         => '{AGENT}',           // Optional
+    'email'         => '{EMAIL}',           // Optional
+    'agentcustomid' => '{AGENTCUSTOMID}',   // Optional
+    'team'          => '{TEAM}',            // Optional
+]);
 ```
