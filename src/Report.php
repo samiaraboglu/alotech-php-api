@@ -22,11 +22,11 @@ class Report
     /**
      * Get reports agent performance
      *
-     * @param array $parameter
+     * @param array $parameter [optional]
      *
      * @return array
      */
-    public function agentPerf($parameter)
+    public function agentPerf($parameter = null)
     {
         return $this->aloTech->request('reportsAgentPerf', $this->aloTech->getAuthentication()->getAppToken(), null, null, $parameter);
     }
