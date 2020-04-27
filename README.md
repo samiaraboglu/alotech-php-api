@@ -67,3 +67,23 @@ Unholds the active call of the agent.
 ```php
 $click2->unhold();
 ```
+
+### Report
+Use report service.
+```php
+$report = new AloTech\Report($aloTech);
+```
+
+#### Agent Performance
+Returns agent performance information for the given period.
+
+```php
+$report->agentPerf([
+    'startdate'     => '{Y-m-d}'),          // Optional
+    'finishdate'    => '{Y-m-d}',           // Optional
+    'agent'         => '{AGENT}',           // Optional
+    'email'         => '{EMAIL}',           // Optional
+    'agentcustomid' => '{AGENTCUSTOMID}',   // Optional
+    'team'          => '{TEAM}',            // Optional
+]);
+```
