@@ -189,7 +189,7 @@ class AloTech
      */
     public function __get($name)
     {
-        if (!in_array($name, ['click2', 'recording'])) {
+        if (!in_array($name, ['click2', 'recording', 'report'])) {
             $trace = debug_backtrace();
             throw new \Exception(sprintf('Undefined property via __get(): %s in %s on line %u', $name, $trace[0]['file'], $trace[0]['line']));
         }
