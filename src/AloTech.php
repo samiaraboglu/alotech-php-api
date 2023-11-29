@@ -4,7 +4,7 @@ namespace AloTech;
 
 class AloTech
 {
-    const API_URL = 'http://{username}.alo-tech.com/api';
+    const API_URL = 'https://{username}.alo-tech.com/api';
 
     const TYPE_GET = 'GET';
 
